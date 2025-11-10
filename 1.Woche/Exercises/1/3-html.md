@@ -14,12 +14,12 @@ Erstelle folgende Struktur in deiner Datei:
 
 **Frage 1:**
 Was ist der Unterschied zwischen einem **Tag** und einem **Element**?
-👉 **Lösung:**
+
 
 
 ---
 
-## 🧱 **Teil 2: Verschachtelung**
+##  **Teil 2: Verschachtelung**
 
 **Aufgabe 2:**
 Füge einen Absatz ein, in dem du ein Wort fett und kursiv kombinierst:
@@ -53,7 +53,7 @@ Wofür steht `href`?
 
 ---
 
-## 🧱 **Teil 4: Kommentare & optionale Tags**
+##  **Teil 4: Kommentare & optionale Tags**
 
 **Aufgabe 4:**
 Füge Kommentare ein:
@@ -70,7 +70,7 @@ Werden HTML-Kommentare im Browser angezeigt?
 
 ---
 
-## 🧱 **Teil 5: Void-Tags (alleinstehende Elemente)**
+##  **Teil 5: Void-Tags (alleinstehende Elemente)**
 
 **Aufgabe 5:**
 Füge einen Zeilenumbruch ein:
