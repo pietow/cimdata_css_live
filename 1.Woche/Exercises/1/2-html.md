@@ -1,0 +1,66 @@
+#  **UE 1 – Eine einfache HTML-Datei erstellen und anzeigen (45 min)**
+
+
+##  **Teil 1: Neue HTML-Datei anlegen**
+
+**Aufgabe 1:**
+Erstelle auf deinem Desktop einen Ordner `html_grundlagen`.
+Öffne ihn in **VS Code** und lege eine neue Datei **`index.html`** an.
+
+**Frage 1:** Unter welcher Endung müssen HTML-Dateien gespeichert werden?
+
+**Frage 2:** In welcher Codierung sollte man HTML speichern?
+
+---
+
+## **Teil 2: HTML-Grundgerüst schreiben**
+
+**Aufgabe 2:**
+Kopiere folgendes Grundgerüst in deine Datei und füge ein Überschrift und Absatz hinzu:
+
+```html
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meine erste Webseite</title>
+  </head>
+  <body>
+    ???????????????????
+  </body>
+</html>
+```
+
+Speichere die Datei (`Ctrl + S`).
+
+---
+
+##  **Teil 3: Im Browser anzeigen**
+
+**Aufgabe 3:**
+Installiere in VS Code die Extension **„Live Server“**.
+Klicke unten rechts auf **„Go Live“** und beobachte deine Seite im Browser.
+
+**Frage 3:**
+Was bedeutet `<!doctype html>`?
+
+**Frage 4:**
+Welche zwei Hauptbereiche gibt es in jedem HTML-Dokument?
+
+---
+
+## 🧱 **Teil 4: Erste Änderungen testen**
+
+**Aufgabe 4:**
+
+* Ändere den Text in der Überschrift.
+* Füge einen zweiten Absatz hinzu:
+
+* Beobachte, wie sich der Browser automatisch aktualisiert.
+
+---
+
+**Frage 5:**
+Was passiert, wenn man bei einem Absatz das schließende `<p>`-Tag vergisst?
+
+---
