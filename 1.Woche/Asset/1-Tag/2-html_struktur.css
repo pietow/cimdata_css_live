@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 30px;
+}
+
+.html-box {
+  border: 2px solid #3049b0; /* dunkelblau */
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.body-box {
+  border: 2px solid #2e8b57; /* grün */
+  padding: 15px 20px;
+  margin: 10px;
+}
+
+.h1-box, .h2-box, .p-box {
+  border: 2px solid #a02020; /* rotbraun */
+  padding: 10px;
+  margin: 15px 0;
+}
+
+h1, h2 {
+  margin: 0 0 5px 0;
+}
+
+.p-box br {
+  line-height: 2;
+}
+
+div {
+  white-space: pre-line;
+}
