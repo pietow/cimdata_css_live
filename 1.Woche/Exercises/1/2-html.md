@@ -8,15 +8,15 @@ Erstelle auf deinem Desktop einen Ordner `html_grundlagen`.
 Öffne ihn in **VS Code** und lege eine neue Datei **`index.html`** an.
 
 **Frage 1:** Unter welcher Endung müssen HTML-Dateien gespeichert werden?
+`.html` oder `.htm`
 
 **Frage 2:** In welcher Codierung sollte man HTML speichern?
-
----
+ UTF-8
 
 ## **Teil 2: HTML-Grundgerüst schreiben**
 
 **Aufgabe 2:**
-Kopiere folgendes Grundgerüst in deine Datei und füge ein Überschrift und Absatz hinzu:
+Kopiere folgendes Grundgerüst in deine Datei und füge eine Überschrift und einen Absatz hinzu:
 
 ```html
 <!doctype html>
@@ -26,7 +26,8 @@ Kopiere folgendes Grundgerüst in deine Datei und füge ein Überschrift und Abs
     <title>Meine erste Webseite</title>
   </head>
   <body>
-    ???????????????????
+    <h1>Meine erste Webseite</h1>
+    <p>Hallo.</p>
   </body>
 </html>
 ```
@@ -43,9 +44,11 @@ Klicke unten rechts auf **„Go Live“** und beobachte deine Seite im Browser.
 
 **Frage 3:**
 Was bedeutet `<!doctype html>`?
+ Es legt fest, dass es sich um ein **HTML-5-Dokument** handelt.
 
 **Frage 4:**
 Welche zwei Hauptbereiche gibt es in jedem HTML-Dokument?
+`<head>` (Kopfdaten) und `<body>` (sichtbarer Inhalt)
 
 ---
 

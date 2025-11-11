@@ -15,7 +15,8 @@ Erstelle folgende Struktur in deiner Datei:
 **Frage 1:**
 Was ist der Unterschied zwischen einem **Tag** und einem **Element**?
 
-
+Ein **Tag** ist nur der Name in spitzen Klammern (`<p>`).
+Ein **Element** besteht aus **Start-Tag, Inhalt und End-Tag** (`<p>Text</p>`).
 
 ---
 
@@ -31,6 +32,8 @@ Füge einen Absatz ein, in dem du ein Wort fett und kursiv kombinierst:
 **Frage 2:**
 Warum muss `<i>` **innerhalb** von `<b>` geschlossen werden?
 
+Weil HTML **verschachtelt** ist.
+Innere Tags müssen **zuerst geschlossen** werden.
 
 
 ---
@@ -47,10 +50,12 @@ Füge ein Bild und einen Link hinzu:
 
 **Frage 3:**
 Wofür steht `src` und `alt`?
+* `src` = Quelle des Bildes (url oder Pfad)
+* `alt` = Alternativtext, falls das Bild nicht geladen wird
 
 **Frage 4:**
 Wofür steht `href`?
-
+Hyperlink-Referenz, also Zieladresse des Links.
 ---
 
 ##  **Teil 4: Kommentare & optionale Tags**
@@ -66,7 +71,7 @@ Füge Kommentare ein:
 
 **Frage 5:**
 Werden HTML-Kommentare im Browser angezeigt?
-
+Nein, sie sind **nur im Quelltext** sichtbar.
 
 ---
 
@@ -81,6 +86,9 @@ Füge einen Zeilenumbruch ein:
 
 **Frage 6:**
 Warum hat `<br>` kein schließendes Tag?
+Es ist ein **void-Tag**, also ein Element **ohne Inhalt**.
+Ein anderes Beispiel wäre der <img> Tag
+
 
 
 

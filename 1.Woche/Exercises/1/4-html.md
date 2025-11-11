@@ -7,7 +7,10 @@
 Erkläre in eigenen Worten:
 Was passiert, wenn ein Browser HTML lädt?
 
-
+1. Der Browser stellt eine HTTP-Anfrage and den Webserver
+2. Der Webserver gibt eine HTTP Antwort mit dem Html-Text
+3. Dieser Text wird ins DOM vom Browsr umgewandelt
+4. Jedes HTML-Element wird zu einem Knoten im Baum
 
 ## **Teil 2: DOM-Inspektor**
 
@@ -19,6 +22,9 @@ Was passiert, wenn ein Browser HTML lädt?
 
 **Frage 1:**
 Was zeigt der DOM-Inspektor an?
+
+- Quellcode
+- Die **verschachtelte Struktur** (Eltern- und Kindelemente) deines HTML-Dokuments.
 
 
 ## **Teil 3: Falsche Verschachtelung finden**
@@ -32,7 +38,7 @@ Kopiere folgenden Fehler in deine Datei:
 
 **Frage 2:**
 Was ist hier falsch?
-
+Die Tags sind **überkreuz** geschlossen.
 
 ## **Teil 4: Baumstruktur visualisieren**
 
@@ -47,12 +53,15 @@ Zeichne auf Papier den Baum für dieses Dokument:
   </body>
 </html>
 ```
+![alt text](<shapes at 25-11-11 13.42.37.png>)
 
 **Frage 3:**
 Welches Element ist die Wurzel?
-
+html element
 
 **Frage 4:**
 Welche Elemente sind Kinder von `<body>`?
+
+h1 und p sind die Kinderelemente vom body
 
 
