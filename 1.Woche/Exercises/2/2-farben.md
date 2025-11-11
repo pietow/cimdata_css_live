@@ -59,7 +59,7 @@ Erzeuge Transparenzeffekte:
 
 Setze 3 Hintergrundfarbe mit unterschiedlichen Transparenzen auf 3 verschiedene `<div>`.
 
-**Lösung:**
+**Lösung: Ersetze die Fragezeichen mit CSS**
 
 ```html
 <style>
