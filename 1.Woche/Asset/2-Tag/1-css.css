@@ -1,0 +1,60 @@
+/* Grundlayout */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #fff;
+}
+
+/* Navigationsbereich */
+nav {
+  background-color: #f2aa52;       /* orange Hintergrundfarbe */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border: 1px solid #444;
+}
+
+/* Logo-Bereich */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.logo-text {
+  letter-spacing: 6px;
+  font-size: 14px;
+  color: #222;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2d2d2d;
+  font-size: 18px;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover-Effekt */
+.nav-links a:hover {
+  background-color: #2d2d2d;
+  color: #f2aa52;
+  cursor: pointer;
+}
+
+
