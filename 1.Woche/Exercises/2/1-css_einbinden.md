@@ -11,11 +11,18 @@ Schreibe ein HTML-Dokument, in dem:
 
 
 
+
 ### **Fragen**
 
 1. Wo wird Inline-CSS geschrieben?
+1. Direkt im HTML-Tag im `style=""`.
+
 2. Was hat Vorrang: Inline oder externes CSS?
+2. Inline hat höchste Priorität.
+
+
 3. Vorteil von Inline-CSS?
+3. Gut für schnelle Tests oder einmalige Styles.
 
 
 
@@ -36,9 +43,13 @@ Erstelle ein HTML-Dokument, das im `<style>`-Block:
 ###  **Fragen**
 
 1. Wo steht internes CSS?
-2. Was passiert, wenn Inline und intern kollidieren?
-3. Wofür eignet sich internes CSS?
+1. Im `<head>` in `<style>`.
 
+2. Was passiert, wenn Inline und intern kollidieren?
+2. Inline gewinnt.
+
+3. Wofür eignet sich internes CSS?
+3. Für kleine Projekte und schnelle Tests.
 
 
 #  **BLOCK 3 — Externes CSS (ca. 20 Minuten)**
@@ -65,9 +76,13 @@ In `index.html` soll die Datei `style.css` korrekt eingebunden sein.
 ### **Fragen**
 
 1. Wann nutzt man externe CSS-Dateien?
-2. Wie bindet man eine externe CSS-Datei korrekt ein?
-3. Was ist der größte Vorteil gegenüber internem CSS?
+1. Für alle mittelgroßen und großen Projekte.
 
+2. Wie bindet man eine externe CSS-Datei korrekt ein?
+2. Mit `<link rel="stylesheet" href="style.css">`
+
+3. Was ist der größte Vorteil gegenüber internem CSS?
+3. Saubere Trennung von Struktur & Design; Wiederverwendung; bessere Wartbarkeit.
 
 # **BLOCK 4 — Prioritäten & Best Practice (ca. 5 Minuten)**
 
@@ -85,3 +100,4 @@ B: Extern
 C: Intern
 
 
+A -> C -> B

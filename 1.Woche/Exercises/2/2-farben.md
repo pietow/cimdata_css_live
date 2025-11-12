@@ -14,8 +14,14 @@ Schreibe ein HTML-Dokument, in dem:
 ### **Fragen**
 
 1. Wie heißt die CSS-Schreibweise für z. B. „red“?
+
+1. **Color Keywords**
+
 2. Was ist der Vorteil von Farbnamen?
+2. Schnell, lesbar, leicht zu merken.
+
 3. Was ist der Nachteil?
+3. Sehr unpräzise, geringe Auswahl.
 
 
 # **BLOCK 2 – HEX-Farben (#RRGGBB)**
@@ -34,16 +40,16 @@ Nutze HEX-Farben, um:
 ### **Fragen**
 
 1. Wie viele HEX-Ziffern hat ein normaler Hex-Farbwert?
-2. Welcher Wert ist maximal?
-3. Wofür stehen die Paarwerte RR, GG, BB?
-
-### **Antworten**
-
 1. 6
-2. `FF` (255)
+
+2. Welcher Wert ist maximal?
+2. `255` (Dezimalzahl) bzw. `FF` (Hexadezimalzahl)
+
+3. Wofür stehen die Paarwerte RR, GG, BB?
 3. Rot, Grün, Blau-Anteil.
 
----
+
+
 
 # **BLOCK 3 – HEX mit Alpha (#RRGGBBAA)**
 
@@ -63,9 +69,15 @@ Setze 3 Hintergrundfarbe mit unterschiedlichen Transparenzen auf 3 verschiedene 
 
 ```html
 <style>
-  .box1 { ???????????????? }
-  .box2 { ?????????????????? }
-  .box3 { ???????????????? }
+  .box1 { 
+    background: #00000080;
+  }
+  .box2 { 
+    background:
+  }
+  .box3 { 
+    background:
+   }
 </style>
 
 <div class="box1">Box 1</div>
@@ -76,8 +88,13 @@ Setze 3 Hintergrundfarbe mit unterschiedlichen Transparenzen auf 3 verschiedene 
 ### **Fragen**
 
 1. Wofür steht das letzte „AA“?
+1. Alpha (Transparenz)
+
 2. Was bedeutet `00`?
+2. Voll transparent
+
 3. Was bedeutet `FF`?
+3. Voll deckend
 
 
 # **BLOCK 4 – rgb() und rgba()**
@@ -99,8 +116,13 @@ Erstelle:
 ### **Fragen**
 
 1. Welche Werte akzeptiert rgb?
+1. Drei Werte 0–255
+
 2. Welche zusätzlichen Werte akzeptiert rgba?
+2. Eine Transparenz 0–1
+
 3. Was bedeutet `0.0` bis `1.0`?
+3. 0 = transparent, 1 = deckend
 
 
 
@@ -123,8 +145,13 @@ Erzeuge:
 ### **Fragen**
 
 1. Was stellt der Hue-Wert dar?
+1. Farbwinkel 0–360°
+
 2. Was sagt Lightness aus?
+2. Helligkeit
+
 3. Welcher Bereich hat Saturation?
+3. 0%–100%
 
 
 
