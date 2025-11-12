@@ -1,5 +1,5 @@
 
-# **BLOCK 2 – Schriftfamilien, Gewicht & Stil **
+# BLOCK 1 – Schriftfamilien, Gewicht & Stil 
 
 **Beispiel:**
 
