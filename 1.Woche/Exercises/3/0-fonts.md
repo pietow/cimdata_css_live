@@ -63,6 +63,9 @@ Erstelle CSS, in dem:
 2. Was bedeutet `font-weight: 700`?
 
 
+1. Definiert die Schriftart und Alternativen.
+2. Bold/kräftige Schrift.
+
 ---
 
 ## **Antworten**
@@ -136,9 +139,16 @@ Stelle folgendes typografisch ein:
 ## ✅ **Fragen**
 
 1. Was macht `text-transform`?
-2. Wofür wird `text-indent` genutzt?
-3. Was erzeugt `font-variant: small-caps`?
 
+Macht Text groß, klein oder kapitalisiert.
+
+
+
+2. Wofür wird `text-indent` genutzt?
+Indentiert (einrückt) die erste Zeile eines Absatzes.
+
+3. Was erzeugt `font-variant: small-caps`?
+Zeigt Kleinbuchstaben als kleine Großbuchstaben.
 
 
 
@@ -190,6 +200,11 @@ Erstelle ein HTML-Dokument, das:
 ## **Fragen**
 
 1. Was bedeutet `1rem`?
+1rem = 100% der Schriftgröße des `<html>`-Elements.
+
 2. Was bedeutet `line-height: 1.6;`?
+Die Zeilenhöhe ist 1.6 × der Schriftgröße.
+
 3. Warum ist `letter-spacing` oft in `em` sinnvoll?
+Weil sich der Abstand proportional zur Schrift mitverändert.
 
