@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semantische Boxen mit Float, Padding, Margin, content-box & calc()</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="karten" aria-labelledby="galerie-ueberschrift">
+      <h2 id="galerie-ueberschrift">Galerie</h2>
+      <article class="karte">
+        <figure>
+          <img src="https://picsum.photos/200?random=1"  alt="Beispielbild 1" />
+          <figcaption>Bild 1 – Landschaft</figcaption>
+        </figure>
+        <h3>Box Titel 1</h3>
+        <p>Kurzer Beschreibungstext zur ersten Box.</p>
+      </article>
+
+      <article class="karte">
+        <figure>
+          <img src="https://picsum.photos/200?random=2" alt="Beispielbild 2" />
+          <figcaption>Bild 2 – Architektur</figcaption>
+        </figure>
+        <h3>Box Titel 2</h3>
+        <p>Kurzer Beschreibungstext zur zweiten Box.</p>
+      </article>
+
+      <article class="karte">
+        <figure>
+          <img src="https://picsum.photos/200?random=3" alt="Beispielbild 3" />
+          <figcaption>Bild 3 – Stadtansicht</figcaption>
+        </figure>
+        <h3>Box Titel 3</h3>
+        <p>Kurzer Beschreibungstext zur dritten Box.</p>
+      </article>
+
+      <article class="karte">
+        <figure>
+          <img src="https://picsum.photos/200?random=4" alt="Beispielbild 4" />
+          <figcaption>Bild 4 – Natur</figcaption>
+        </figure>
+        <h3>Box Titel 4</h3>
+        <p>Kurzer Beschreibungstext zur vierten Box.</p>
+      </article>
+    </section>
+  </main>
+
+  <aside>
+    <section>
+      <h2>Hinweise</h2>
+      <p>Diese Seite demonstriert nebeneinander angeordnete Boxen mit Float.</p>
+    </section>
+    <section>
+      <h2>Bilder</h2>
+      <p>Platzhalterbilder via <code>picsum.photos</code>.</p>
+    </section>
+  </aside>
+</body>
+</html>

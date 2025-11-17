@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS-Selektoren Übung</title>
+  <style>
+    /* Grundstil */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      padding: 2em;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+      text-decoration: underline;
+      font-weight:900;
+    }
+
+    section {
+      background-color: #fff;
+      border-radius: 0.5em;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+
+    .info {
+        color: blue;
+    }
+
+    #intro {
+        border: red solid 1px;
+        background-color: #ddd;
+    }
+
+    li[data-category="book"] {
+        /* background-color: yellow; */
+        color: black;
+    }
+    #products {
+        background-color: gray;
+    }
+
+    .item {
+        color: #fff;
+    }
+
+    a.link  {
+        color: rgb(1, 100, 255)
+    }
+
+/* 1. Verändere die Schriftgröße des `<strong>`-Elements **innerhalb** von `.info`.
+2. Färbe alle externen Links im Footer **rot**.
+3. Markiere Produkte mit `data-price="15"` orange. */
+
+    .info strong {
+        font-size: 1.2em;
+    }
+
+    #footer a.external {
+        color:red;
+    }
+
+    #products li[data-price="15"] {
+        color: blue;
+    }
+
+/* 1. Markiere das **letzte Produkt**.
+2. Gib jedem **ungeradem Produkt** einen gestrichelten Rahmen. */
+
+    #products li:last-child {
+        color: darkred;
+    }
+
+    #products li:nth-child(even) {
+        border: 1px red solid;
+        background-color: #fff;
+        color: black;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Arbeiten mit CSS-Selektoren</h1>
+
+  <section id="intro">
+    <p class="info">Dies ist ein <strong>Beispieltext</strong>.</p>
+    <p class="note">Eine zusätzliche Notiz.</p>
+  </section>
+
+  <section id="products">
+    <ul>
+      <li class="item" data-price="15" data-category="book">Buch</li>
+      <li class="item" data-price="9" data-category="pen">Stift</li>
+      <li class="item" data-price="5" data-category="paper">Papier</li>
+      <li class="item" data-price="5" data-category="paper">Papier</li>
+      <li class="item" data-price="5" data-category="paper">Papier</li>
+      <li class="item" data-price="5" data-category="paper">Papier</li>
+    </ul>
+  </section>
+
+  <section id="footer">
+    <p>© 2025 Beispielshop</p>
+    <a href="#" class="link external">Kontakt</a>
+    <a href="#" class="link internal">Impressum</a>
+  </section>
+</body>
+</html>

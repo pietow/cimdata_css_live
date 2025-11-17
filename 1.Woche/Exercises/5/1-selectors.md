@@ -72,6 +72,17 @@ Erstelle eine Datei **`selectors_exercise.html`** mit folgendem Inhalt:
 2. Gib dem Element mit der **ID „intro“** einen **grauen Hintergrund**.
 3. Mache die Überschrift (`h1`) **fett und unterstrichen**.
 
+```css
+.info {
+  color: blue;
+}
+
+
+
+.note {...}
+```
+
+
 ## **3. Aufgabe B – Mittlere Selektoren (15 min)**
 
 ### ️ **Aufgabe**
