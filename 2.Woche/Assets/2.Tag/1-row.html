@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+            border: black solid 1px;
+        }
+
+        .flex1 {
+            flex-direction: row-reverse;
+        }
+
+        .flex > div, .flex2 > div {
+            border: red solid 1px;
+            margin: 1em;
+            padding: 1em;
+        }
+
+        .flex2 {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .box2 {
+            height: 0.1px;
+            align-self: self-end;
+        }
+
+        .box3 {
+            height: 0.1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex flex1">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+
+    <div class="flex flex2">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+    
+</body>
+</html>
