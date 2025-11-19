@@ -64,7 +64,7 @@ Setze:
 ### **Frage 3**
 
 Welche Achse beeinflusst `justify-content`?
-
+`justify-content` beeinflusst die **Hauptachse** (row → horizontal, column → vertikal).
 ---
 
 ---
@@ -92,7 +92,7 @@ Setze:
 ### **Frage 4**
 
 Was macht `align-items`?
-
+`align-items` steuert die **Ausrichtung auf der Querachse** (cross axis).
 ---
 
 ---
@@ -141,5 +141,5 @@ Ziel:
 ### **Frage 6**
 
 Warum ist `align-self` nützlich?
-
+Weil es **ein einzelnes Flex-Item unabhängig von den anderen** auf der Querachse ausrichtet — ideal für Sonderfälle.
 ---
