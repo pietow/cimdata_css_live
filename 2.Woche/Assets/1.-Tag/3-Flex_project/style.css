@@ -54,6 +54,7 @@ body * + * {
 
 .flex {
     display: flex;
+    align-items: start;
 }
 
 .flex > * + * {
@@ -90,4 +91,40 @@ body * + * {
     border: 1px solid #cc6b5a;
     background-color: white;
     cursor: pointer;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered .cost {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 0.7;
+}
+
+.cost > span{
+    margin-top: 0;
+}
+
+.cost-currency {
+    font-size: 2rem;
+}
+
+.centered .cost-dollars {
+    font-size: 4em;
+}
+
+.centered .cost-cents {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    font-size: .8em;
+}
+
+.cta-button {
+    display: block;
+    background-color: #cc6b5a;
+    color: white;
+    text-decoration: none;
 }
