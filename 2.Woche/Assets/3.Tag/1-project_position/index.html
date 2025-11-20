@@ -33,23 +33,39 @@
 </div>
 
 <div class="container">
-  <nav>
-    <div class="dropdown">
-      <div class="dropdown-label">Main Menu</div>
-      <div class="dropdown-menu">
-        <ul class="submenu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/coffees">Coffees</a></li>
-          <li><a href="/brewers">Brewers</a></li>
-          <li><a href="/specials">Specials</a></li>
-          <li><a href="/about">About us</a></li>
-        </ul>
+  <main class="col-main">
+    <!-- Wraps existing content in a col-main for the main column -->
+    <nav>
+      <div class="dropdown">
+        <div class="dropdown-label">Main Menu</div>
+        <div class="dropdown-menu">
+          <ul class="submenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/coffees">Coffees</a></li>
+            <li><a href="/brewers">Brewers</a></li>
+            <li><a href="/specials">Specials</a></li>
+            <li><a href="/about">About us</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <h1>Wombat Coffee Roasters</h1>
-</div>
+    </nav>
+    <h1>Wombat Coffee Roasters</h1>
+  </main>
 
+  <aside class="col-sidebar">
+    <!-- Adds a second column with an affix element inside it -->
+
+  </aside>
+</div>
+    <div class="affix">
+      <ul class="submenu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/coffees">Coffees</a></li>
+        <li><a href="/brewers">Brewers</a></li>
+        <li><a href="/specials">Specials</a></li>
+        <li><a href="/about">About us</a></li>
+      </ul>
+    </div>
 <script type="text/javascript">
   var button = document.getElementById('open');
   var close = document.getElementById('close');

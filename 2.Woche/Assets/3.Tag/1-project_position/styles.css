@@ -23,7 +23,7 @@ button {
 }
 
 .modal {
-    /* display: none; */
+    display: none;
 }
 
 .modal-backdrop {
@@ -33,6 +33,7 @@ button {
     bottom: 0;
     left: 0;
     background-color: rgba(0,0,0, 0.5);
+    z-index: 1; /* liegt vor statischem Inhalt*/
 }
 
 .modal-body {
@@ -44,6 +45,7 @@ button {
     padding: 2em 3em;
     background-color: white;
     overflow: auto;
+    z-index: 2; /* liegt über dem Backdrop */
 }
 
 .modal-close {
@@ -70,9 +72,24 @@ button {
 }
 
 .container {
+    display: flex;
     width: 80%;
     max-width: 1000px;
     margin: 1em auto;
+}
+
+.col-main {
+    flex: 1 80%;
+}
+
+.col-sidebar {
+    flex: 20%;
+}
+
+.affix {
+    position: sticky;
+    top: 25em;
+    border:1px solid red
 }
 
 .dropdown {
@@ -81,9 +98,23 @@ button {
 }
 
 .dropdown-label {
-    padding: .5em 1.5em;
+    padding: .5em 2em 0.5em 1.5em;
     border: 1px solid #ccc;
     background-color: #eee;
+}
+
+.dropdown-label::after {
+    content: "";
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    border: 0.3em solid;
+    border-color: black transparent transparent;
+}
+
+.dropdown:hover .dropdown-label::after {
+    top: 0.7em; 
+    border-color: transparent transparent black;
 }
 
 .dropdown-menu {
