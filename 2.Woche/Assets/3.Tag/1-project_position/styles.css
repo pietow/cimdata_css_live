@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 200vh;
+    min-height: 250vh;
     margin: 0;
 }
 
@@ -76,6 +76,7 @@ button {
     width: 80%;
     max-width: 1000px;
     margin: 1em auto;
+    min-height: 100vh;
 }
 
 .col-main {
@@ -84,12 +85,13 @@ button {
 
 .col-sidebar {
     flex: 20%;
+    border:1px solid red;
 }
 
 .affix {
     position: sticky;
-    top: 25em;
-    border:1px solid red
+    top: 1em;
+
 }
 
 .dropdown {

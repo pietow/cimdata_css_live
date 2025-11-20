@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            position: fixed;
+            right: 1em;
+            bottom: 1em;
+            border-radius: 50%;
+        }
+
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+        }
+
+        .kind {
+            position: absolute;
+            width: 50px;
+            height: 20px;
+            bottom: 0.5em; /*wird ignoriert, da top und height gestetzt wurde*/
+            top: 0.5em; /* top hat vorrang vor bottom */
+            right: 0.5em; /*wird ignoriert, da top und width gestetzt wurde*/
+            left: 0.5em; /* left hat vorrang vor right */
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>    
+     <!-- Aufgabe 5 -->
+    <aside class="side">
+        Sidebar
+    </aside>
+    <main class="content">
+            ....viel Inhalt ...
+    </main>
+    <style>
+        body {
+            height:200vh; ;
+        }
+        .side {
+            position: fixed;
+            top:0;
+            left:0;
+            width: 20%;
+            height: 50vh;
+            background-color: #eee;
+        }
+        .content {
+            margin-left: 20%;
+        }
+    </style>
+    <div style="height:50vh;">Abstand</div>
+    <!-- Aufgabe 2  -->
+    <button>?</button>    
+
+    <!-- Aufgabe 3  -->
+    <div class="container">
+        <div class="kind">Kind</div>
+    </div>
+
+    <!-- Aufgabe 3  -->
+     <div class="text-box">
+        <span class="label">Info</span>
+        <p>Langer Absatz.....</p>
+     </div>
+     <style>
+        .text-box {
+            position:relative;
+            padding: 1em;
+            border: 1px solid #333;
+        }
+
+        .label {
+            position: absolute;
+            top: 1.9em;
+            left: 0.5em; 
+            background-color: orange;
+        }
+        .text-box > p {
+            border: solid black 1px;
+            padding: 1em;
+        }
+     </style>
+
+</body>
+</html>
