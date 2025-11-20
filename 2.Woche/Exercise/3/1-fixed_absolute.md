@@ -92,10 +92,67 @@ Erstelle eine linke Sidebar mit fester Position, die 20% Breite hat
 
 **Frage:**
 Baue ein kleines Menü, bei dem die Dropdown-Liste absolut *unter* dem Label erscheint (ohne Hover, immer sichtbar).
+**Lösung:**
 
+**Code:**
+
+```html
+<div class="drop">
+  <div class="label">Menu</div>
+  <ul class="menu">
+    <li>A</li><li>B</li><li>C</li>
+  </ul>
+</div>
+
+<style>
+  .drop { position: relative; display: inline-block; }
+  .label { padding: 0.5em; background: #ddd; }
+  .menu {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    background: #eee;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid #999;
+  }
+  .menu li {
+    padding: 0.5em 1em;
+  }
+</style>
+```
 ---
 
 ## **Aufgabe 7 — Fixed Modal**
 
 **Frage:**
 Erstelle ein einfaches Modal mit Backdrop (beide fixed).
+**Lösung:**
+
+**Code:**
+
+```html
+<button>Open</button>
+
+<div class="back"></div>
+<div class="modal">Hallo!</div>
+
+<style>
+  .back {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2em;
+  }
+</style>
+```
