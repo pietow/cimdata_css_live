@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    <div class="box box4">Box 4</div>
+    <div class="box box5">
+        Box 5
+        <div class="nested">Kind (Box5)</div>
+    </div>
+
+    <style>
+        .nested {
+            background: white;
+            position: absolute;
+            border: black dashed 1px;
+            top: 20px;
+            left: 10px;
+            line-height: 20px;
+            z-index: 30;
+        }
+        .box {
+            border: black solid 1px;
+            width: 150px;
+            line-height: 150px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: orange;
+            position: relative;
+            top: 25px;
+            left: 300px;
+            z-index: 25;
+        }
+        .box2 {
+            background-color: red;
+            margin-left: -50px;
+            /* z-index: 20; keine Effekt, da static */
+        }
+        .box3 {
+            background-color: gray;
+            margin-left: -50px;
+            position: relative;
+            z-index: 10;
+        }
+        .box4 {
+            background-color: steelblue;
+            margin-left: -50px;
+        }
+        .box5 {
+            position: relative;
+            background-color: limegreen;
+            margin-left: -50px;
+            z-index: 20;
+            left: -150px;
+        }
+    </style>
+    
+</body>
+</html>
