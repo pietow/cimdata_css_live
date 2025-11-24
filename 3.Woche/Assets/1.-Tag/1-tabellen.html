@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @media (max-width: 35em) {
+        table,
+        thead,
+        tbody,
+        tr,
+        th,
+        td {
+            display: block;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px
+        }
+
+        tr {
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5em;
+            padding: 0.75em;
+            background-color: #fcfafa;
+        }
+
+        td::before {
+            content: attr(data-label) ": ";
+            font-weight: bold;
+            color: #444;
+            display: block;
+            margin-bottom: 0.4rem;
+            margin-top: 0.4rem;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Kaffee-Preisliste</h1>
+
+  <table class="coffee-table">
+    <thead>
+      <tr>
+        <th>Sorte</th>
+        <th>Herkunft</th>
+        <th>Röstgrad</th>
+        <th>Preis</th>
+      </tr>
+    </thead>
+        <tbody>
+            <tr>
+            <td data-label="Sorte">Single Origin</td>
+            <td data-label="Herkunft">Äthiopien</td>
+            <td data-label="Röstgrad">Mittel</td>
+            <td data-label="Preis">12 €</td>
+            </tr>
+            <tr>
+            <td data-label="Sorte">House Blend</td>
+            <td data-label="Herkunft">Kolumbien/Brasilien</td>
+            <td data-label="Röstgrad">Dunkel</td>
+            <td data-label="Preis">10 €</td>
+            </tr>
+            <tr>
+            <td data-label="Sorte">Cold Brew Mix</td>
+            <td data-label="Herkunft">Guatemala</td>
+            <td data-label="Röstgrad">Hell</td>
+            <td data-label="Preis">14 €</td>
+        </tr>
+    </tbody>
+  </table>  
+    
+</body>
+</html>
