@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="3-style.css">
+</head>
+
+<body>
+    <form method="post" action="http://localhost:3000/submit">
+        <fieldset>
+
+            <label for="vname">Vorname:</label>
+            <input type="text" name="name" id="vname" placeholder="Vorname" required>
+            <span class="hint"></span>
+
+            <label for="nname">Nachname:</label>
+            <input type="text" name="nname" id="nname" placeholder="Nachname">
+
+            <label for="mail">E-Mail:</label>
+            <input type="email" name="mail" id="mail" placeholder="E-Mail" required>
+            <span class="hint"></span>
+
+            <label for="nachricht">Ihre Nachricht:</label>
+            <textarea name="nachricht" id="nachricht" placeholder="Nachricht eingeben ..." required></textarea>
+            <span class="hint"></span>
+
+            <button type="submit" class="btn">Nachricht absenden</button>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

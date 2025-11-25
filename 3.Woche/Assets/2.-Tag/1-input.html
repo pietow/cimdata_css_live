@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input,
+        textarea,
+        select {
+            display: block;
+            margin: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="mein_name">
+    <input type="password" name="mein_password">
+    <textarea name="txt" rows="15" cols="50" maxlength="2500">
+  Hier Ihre Nachricht eingeben ...
+  </textarea>
+
+    <!-- 1. Auswahlmöglichkeit -->
+    <select name="thema1">
+        <!-- emmet: option[value="val$"]*4 -->
+        <option value="val1">HTML</option>
+        <option value="val2" selected>CSS</option>
+        <option value="val3">JS</option>
+        <option value="val4">React</option>
+    </select>
+
+    <!-- 2. Auswahlmöglichkeit -->
+    <select multiple name="thema2" size="4">
+        <option value="val5">HTML</option>
+        <option value="val6" selected>CSS</option>
+        <option value="val7">JavaScript</option>
+        <option value="val8" selected>React</option>
+    </select>
+
+    <!-- 3. Auswahlmöglichkeit -->
+    <select multiple name="thema3" size="6">
+        <optgroup label="Gruppe 1">
+            <option value="val9">HTML</option>
+            <option value="val10">CSS</option>
+        </optgroup>
+        <optgroup label="Gruppe 2">
+            <option value="val11">JavaScript</option>
+            <option value="val12">React</option>
+        </optgroup>
+    </select>
+    <style>
+        .my_radio,
+        .my_checkbox,
+        .my_buttons,
+        .form2, .liste {
+            border: solid 1px;
+            border-radius: 0.25rem;
+            padding: 0.5em;
+            width: 35%;
+            margin-top: 0.5em;
+        }
+    </style>
+
+    <div class="my_radio">
+        <p>Bitte Zimmer auswählen:</p>
+        <p>
+            <input type="radio" name="zimmer" value="budget">Günstig<br>
+            <input type="radio" name="zimmer" value="standard" checked>Standardzimmer<br>
+            <input type="radio" name="zimmer" value="luxus">Luxuszimmer
+        </p>
+    </div>
+    <div class="my_radio">
+        <p>
+            <input type="radio" name="zimmer" id="budget" value="budget">
+            <label for="budget">Einfaches Zimmer</label><br>
+
+            <input type="radio" name="zimmer" id="standard" value="standard">
+            <label for="standard">Standardzimmer</label><br>
+
+            <input type="radio" name="zimmer" id="luxus" value="luxus">
+            <label for="luxus">Luxuszimmer</label>
+        </p>
+    </div>
+
+    <div class="my_checkbox">
+        <p>Bitte Verpflegung auswählen:</p>
+        <p>
+            <input type="checkbox" name="essen" id="brunch" value="brunch">
+            <label for="brunch">Umfassendes Frühstück</label><br>
+
+            <input type="checkbox" name="essen" id="mittagessen" value="mittagessen">
+            <label for="mittagessen">Reichhaltiges Mittagessen</label><br>
+
+            <input type="checkbox" name="essen" id="abendessen" value="abendessen">
+            <label for="abendessen">Üppiges Abendessen</label>
+        </p>
+    </div>
+
+    <div class="my_buttons">
+        <form>
+            Ihre Nachricht:<br>
+            <textarea name="txt" rows="15" cols="50" maxlength="2500">
+    Hier Ihre Nachricht eingeben ...
+    </textarea><br>
+
+            <input type="submit" value="Absenden">
+            <input type="reset" value="Abbrechen">
+            <button type="button">Anklickbarer Button</button>
+        </form>
+    </div>
+
+    <input type="hidden" name="Kundentyp" value="VIP">
+
+    <div class="form2">
+        <form method="post" enctype="multipart/form-data">
+            <p>Datei auswählen:
+                <input type="file" name="bild" accept="image/*">
+            </p>
+        </form>
+    </div>
+    <input type="color" value="#FF0000">
+    <input type="date" value="2023-11-12" min="2023-01-01" max="2024-12-30">
+
+    <style>
+        #email:invalid {
+            border-color: red;
+        }
+
+        #email:valid {
+            border-color: limegreen;
+        }
+    </style>
+
+    <input id="email" type="email" multiple required>
+
+    <div class="liste">
+        <label for="anrede">Anrede:</label>
+        <input list="anrede" name="anrede"><br>
+
+        <datalist id="anrede">
+            <option>Herr</option>
+            <option>Frau</option>
+            <option>Divers</option>
+            <option>Divers2</option>
+        </datalist>
+    </div> 
+</body>
+
+</html>

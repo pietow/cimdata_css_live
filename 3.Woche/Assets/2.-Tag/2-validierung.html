@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required>
+        <label for="email"></label>
+        <button type="submit">Absenden</button>
+    </form>
+    
+    <style>
+        input[type='email']:invalid + label::after {
+            color: red;
+            content: ' x';
+        }
+        input[type='email']:valid + label::after {
+            color: green;
+            content: ' valid';
+        }
+    </style>
+</body>
+</html>

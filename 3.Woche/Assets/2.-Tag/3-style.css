@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 480px;
+    margin: 2rem auto;
+    background: #1e2a38;
+    padding: 1.5rem;
+    border-radius: 0.5em; 
+    color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid #2e3a49;
+    padding: 1.2rem;
+    border-radius: 0.5em;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 0.8rem;
+    line-height: 2.3rem;
+}
+
+input, textarea {
+    width:100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.35em;
+    font-size: 0.7rem;
+}
+
+/* validierung */
+input:not(#nname):valid,
+textarea:valid  {
+    border: 3px solid #3aaa35;
+}
+
+input:invalid,
+textarea:invalid {
+  border: 2px solid #c4422d;
+}
+
+input:not(#nname):focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Unicode-Symbole ✓ und ✕ */
+input:valid + .hint::after,
+textarea:valid + .hint::after {
+  content: "\2713";     /* ✓ */
+  color: #3aaa35;
+  margin-left: 0.25rem;
+}
+
+input:invalid + .hint::after,
+textarea:invalid + .hint::after {
+  content: "\2715";     /* ✕ */
+  color: #c4422d;
+}
+
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn {
+  background: #c4422d;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  margin-top: 1rem;
+  float: right;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #a83625;
+}
