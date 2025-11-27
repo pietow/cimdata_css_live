@@ -3,9 +3,9 @@
 Gegeben:
 
 ```css
-p { color: blue; }
-.text { color: green; }
-#intro { color: red; }
+p { color: blue; }  (0,0,1)
+.text { color: green; } (0,1,0)
+#intro { color: red; }  (1,0,0) /*Diese Regel gewinnt*/
 ```
 
 HTML:
@@ -16,7 +16,7 @@ HTML:
 
 **Frage:** Welche Farbe hat der Text?
 
-
+color: red; 
 
 # **ÜBUNG 2 – Kaskade + Reihenfolge**
 
@@ -34,6 +34,7 @@ HTML:
 ```
 
 **Frage:** Welche Hintergrundfarbe gilt?
+- orange
 
 
 
@@ -42,8 +43,8 @@ HTML:
 CSS:
 
 ```css
-div p { color: blue; }
-.container p { color: red; }
+div p { color: blue; }  (0,0,2)
+.container p { color: red; } (0,1,1)
 ```
 
 HTML:
@@ -55,6 +56,8 @@ HTML:
 ```
 
 **Frage:** Blau oder Rot?
+
+Rot 
 
 # **ÜBUNG 4 – Attributselektor vs. Klasse**
 
@@ -73,6 +76,7 @@ HTML:
 
 **Frage:** Welches Padding gilt?
 
+20px - der Attributselektor hat Spezifität von (0,1,1) 
 ---
 
 # **ÜBUNG 6 – !important**
@@ -91,7 +95,7 @@ HTML:
 ```
 
 **Frage:** Welche Farbe gilt?
-
+- grün wegen !important(schlägt id Selektor)
 
 ---
 
@@ -100,8 +104,8 @@ HTML:
 CSS:
 
 ```css
-.btn.primary { background: blue; }
-.primary { background: purple; }
+.btn.primary { background: blue; } /*2 Klassen*/
+.primary { background: purple; }/*1 Klasse*/
 ```
 
 HTML:
@@ -111,7 +115,7 @@ HTML:
 ```
 
 **Frage:** Welche Farbe?
-
+- Blau
 
 
 ---
@@ -121,8 +125,8 @@ HTML:
 CSS:
 
 ```css
-* { color: gray; }
-p { color: black; }
+* { color: gray; } (0,0,0)
+p { color: black; } (0,0,1)
 ```
 
 HTML:
@@ -133,6 +137,7 @@ HTML:
 
 **Frage:** Welche Textfarbe gilt?
 
+- Schwarz
 ---
 
 # **ÜBUNG 9 – Verschachtelte Selektoren**
@@ -140,8 +145,8 @@ HTML:
 CSS:
 
 ```css
-ul li a { color: blue; }
-.nav a { color: red; }
+ul li a { color: blue; } (0,0,3)
+.nav a { color: red; } (0,1,1)
 ```
 
 HTML:
@@ -152,6 +157,7 @@ HTML:
 </ul>
 ```
 
+- rot
 
 
 # **ÜBUNG 10 – IDs vs. viele Klassen**
@@ -159,8 +165,8 @@ HTML:
 CSS:
 
 ```css
-.big.red.round { border-radius: 50%; }
-#hero { border-radius: 0; }
+.big.red.round { border-radius: 50%; } (0,3,0)
+#hero { border-radius: 0; } (1,0,0)
 ```
 
 HTML:
@@ -169,3 +175,4 @@ HTML:
 <div id="hero" class="big red round"></div>
 ```
 
+border-radius: 0 wird angezeigt

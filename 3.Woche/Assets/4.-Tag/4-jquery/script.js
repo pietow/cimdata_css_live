@@ -1,4 +1,13 @@
 $(function() {
+
+
+    function updateBar(index) {
+        $(".bar-item").removeClass("active")
+        $(".bar-item").eq(index).addClass("active")
+    }
+
+    updateBar(0)
+
     $(".thumb").on("click", function(){
         const big = $(this).data("big");
 
@@ -9,5 +18,9 @@ $(function() {
 
         $(".thumb").removeClass("active")
         $(this).addClass("active")
+
+        const index = $(".thumb").index(this)
+        console.log(index)
+        updateBar(index)
     })
 })

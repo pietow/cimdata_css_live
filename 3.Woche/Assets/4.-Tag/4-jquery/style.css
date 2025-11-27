@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 1rem;
+}
+
+.gallery {
+    max-width: 500px;
+    margin: auto;
+}
+
+.main img {
+    width: 100%;
+    display: block;
+}
+
+.thumbs {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.thumbs img {
+    width: 22%;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.thumbs img.active {
+    opacity: 1;
+    outline: 2px solid #333;
+}
+
+#progress-bar {
+    display: flex;
+    gap: 4px;
+    margin: 10px 0;
+}
+
+#progress-bar .bar-item {
+    flex: 1;
+    height: 4px;
+    background: #ccc;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+#progress-bar .bar-item.active {
+    background: #333;
+    opacity: 1;
+}
