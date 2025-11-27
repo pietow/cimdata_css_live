@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Klick mich</button>
+    <p id="msg">Hello World</p>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $("#btn").on("click", function () {
+            console.log("geklickt")
+            $("#msg").text("Hallo jquery!")
+        })
+    </script>
+</body>
+</html>

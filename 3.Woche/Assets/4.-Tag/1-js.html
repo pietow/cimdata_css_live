@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button>Klick mich</button>
+    
+    <!-- <script src="js/hallo.js"></script> -->
+     <script>
+        const btn = document.querySelector('button')
+        btn.addEventListener('click', ()=> {
+            // alert('Btn geklickt')
+            // confirm('Btn geklickt')
+            const input = prompt('Gib zahl ein')
+            console.log(input)
+        })
+        console.log('Hello from Html')
+     </script>
+
+</body>
+</html>
