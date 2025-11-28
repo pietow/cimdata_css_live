@@ -1,0 +1,48 @@
+/* --- Card Layout --- */
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: system-ui, sans-serif;
+}
+
+/* Hover-Effekt auf gesamte Card */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* --- Card Inhalt --- */
+.card-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #444;
+}
+
+/* --- Button --- */
+.card-btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+/* Hover-Effekt für Button */
+.card-btn:hover {
+  background: #1d4ed8;
+}
